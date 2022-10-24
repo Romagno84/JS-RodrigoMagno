@@ -7,10 +7,11 @@
     <title>Sabrones Viandas y Nutricion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../Style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../../Styles/style.css">
 </head>
-<body>
-    <header class="header">
+<body class="fondoInicio">
+    <header>
         <nav class="navbar">
           <div class="container-fluid"> 
             <a class="navbar-brand" href="../../index.html"><img class="animate__animated animate__rotateIn" src="../../Media/saboresviandas.png" width="200px"></a><h1  class="animate__animated animate__fadeInDown">De Sabores Viandas y Nutricion</h1>
@@ -19,6 +20,7 @@
             </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
+              <img src="/Media/saboresviandas.png" width="100px" alt="">
               <h4 class="offcanvas-title" id="offcanvasNavbarLabel"> De Sabores Viandas y Nutricion</h4>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -28,16 +30,13 @@
                     <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Quienes Somos </a>
+                    <a class="nav-link" href="../../Pages/IMC/IMC.html">Calculo de IMC </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Nutricion</a>
+                    <a class="nav-link active" aria-current="page" href="../Viandas/viandas.html">Viandas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="viandas.html">Viandas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Contacto</a>
+                    <a class="nav-link" href="../../Pages/Contacto/Contacto.html">Contacto</a>
                   </li>
                  </li>
                 </ul>
@@ -45,8 +44,151 @@
             </div>
           </div>
         </nav> 
-      </header>
+    </header>
+    <section>
+    <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">El carrito esta vacio</h1>
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button id="store-cart" class="purchase-btn">GUARDAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-container">
+      <a class="cart-btn">
+      <i id="cart" class="fas fa-shopping-cart"></i>
+        <span class ="cart-quantity">0</span>
+      </a>
+    </div>
+  <div class="items-container">
+    <div class="card-1 card" id="item1">
+      <img class="product-image" src="../../Media/tartas.png" alt="">
+        <h3>Pack por 7 Tartas</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$4630</span>
+    </div>
+    <div class="card-2 card" id="item2">
+        <img class="product-image" src="../../Media/veggie.png" alt="">
+        <h3>Pizzetones Veggies</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-3 card" id="item3">
+        <img class="product-image" src="../../Media/bondiola.png" alt="">
+        <h3>Bondiola a la Mostaza</h3>
+        <button class="add-to-cart">Comprar</button>
+          <span class="product-price">$850</span>
+    </div>
+    <div class="card-4 card" id="item4">
+        <img class="product-image" src="../../Media/pastel.jpeg" alt="">
+        <h3>Pastel de Papas</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-5 card" id="item5">
+        <img class="product-image" src="../../Media/canelo.png" alt="">
+        <h3>Canelones de Acelga</h3>
+        <button class="add-to-cart">Comprar</button>
+      <span class="product-price">$850</span>
+    </div>
+    <div class="card-6 card" id="item6">
+      <img class="product-image" src="../../Media/mila.png" alt="">
+        <h3>Milanesa de Carne con Vegetales</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-7 card" id="item7">
+        <img class="product-image" src="../../Media/tortilla.png" alt="">
+        <h3>Tortilla de Calabaza y Avena</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-8 card" id="item8">
+        <img class="product-image" src="../../Media/fideos.png" alt="">
+        <h3>Fideos con Salsa de Brocoli</h3>
+        <button class="add-to-cart">Comprar</button>
+          <span class="product-price">$850</span>
+    </div>
+    <div class="card-9 card" id="item9">
+        <img class="product-image" src="../../Media/escalope.png" alt="">
+        <h3>Escalope con Pure</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-10 card" id="item10">
+        <img class="product-image" src="../../Media/hamb 2.png" alt="">
+        <h3>Hamburguesas con Papas</h3>
+        <button class="add-to-cart">Comprar</button>
+      <span class="product-price">$850</span>
+    </div>
+    <div class="card-11 card" id="item11">
+      <img class="product-image" src="../../Media/omelett.png" alt="">
+        <h3>Omellette</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$850</span>
+    </div>
+    <div class="card-12 card" id="item12">
+        <img class="product-image" src="../../Media/cesar.png" alt="">
+        <h3>Ensalada Cesar</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-13 card" id="item13">
+        <img class="product-image" src="../../Media/milhojas.png" alt="">
+        <h3>Milhojas de Vegetales</h3>
+        <button class="add-to-cart">Comprar</button>
+          <span class="product-price">$850</span>
+    </div>
+    <div class="card-14 card" id="item14">
+        <img class="product-image" src="../../Media/budin.png" alt="">
+        <h3>Budin de Merluza</h3>
+        <button class="add-to-cart">Comprar</button>
+        <span class="product-price">$875</span>
+    </div>
+    <div class="card-15 card" id="item15">
+        <img class="product-image" src="../../Media/calaba.png" alt="">
+        <h3>Tarta de Calabaza</h3>
+        <button class="add-to-cart">Comprar</button>
+      <span class="product-price">$800</span>
+    </div>
+    <div class="card-16 card" id="item16">
+      <img class="product-image" src="../../Media/Mila pollo.jpeg" alt="">
+      <h3>Milanesa de Pollo con Calabaza</h3>
+      <button class="add-to-cart">Comprar</button>
+    <span class="product-price">$800</span>
+    </div>
+    <div class="card-17 card" id="item17">
+      <img class="product-image" src="../../Media/pastel 2.png" alt="">
+      <h3>Pastel de Pollo y Calabaza</h3>
+      <button class="add-to-cart">Comprar</button>
+    <span class="product-price">$850</span>
+    </div>
+    <div class="card-18 card" id="item18">
+      <img class="product-image" src="../../Media//tartacho.png" alt="">
+      <h3>Tarta de Choclo</h3>
+      <button class="add-to-cart">Comprar</button>
+    <span class="product-price">$800</span>
+    </div>
+    <div class="card-19 card" id="item19">
+      <img class="product-image" src="../../Media/tartaceb.png" alt="">
+      <h3>Tarta de Cebolla</h3>
+      <button class="add-to-cart">Comprar</button>
+    <span class="product-price">$850</span>
+    </div>
+    <div class="card-20 card" id="item20">
+      <img class="product-image" src="../../Media/albondigas.png" alt="">
+      <h3>Albondigas con Arroz</h3>
+      <button class="add-to-cart">Comprar</button>
+    <span class="product-price">$850</span>
+    </div>
+  </div>
+  </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src="./Viandas.js"></script>
 </body>
 </html>

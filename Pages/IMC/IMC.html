@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrones Viandas y Nutricion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../Styles/Style.css">
+</head>
+<body class="fondoInicio">
+    <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid"> 
+            <a class="navbar-brand" href="../../index.html"><img class="animate__animated animate__rotateIn" src="../../Media/saboresviandas.png" width="200px"></a><h1  class="animate__animated animate__fadeInDown">De Sabores Viandas y Nutricion</h1>
+            <button class="navbar-toggler navbar navbar-success bg-success btn btn-success btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="/Media/saboresviandas.png" width="100px" alt="">  
+              <h4 class="offcanvas-title" id="offcanvasNavbarLabel"> De Sabores Viandas y Nutricion</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../IMC/IMC.html">Calculo de IMC </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Viandas/viandas.html">Viandas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Contacto/Contacto.html">Contacto</a>
+                  </li>
+                 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav> 
+      </header>
+    <main class="main">
+       <h2>¿Que es la obesidad?</h2>
+       <h3>¿Que es el IMC y como se relaciona con la obesidad?</h3>
+    
+       <P class="imc">
+        ¿Cómo sé si soy obeso?
+
+        De forma sencilla, la obesidad se puede determinar calculando el Índice de Masa Corporal  IMC. Este índice se divide en rangos de IMC, que luego indican tu grado de obesidad.
+
+        En 1832, Adolfhe Quételet fue el primero en aplicar las matemáticas al estudio del hombre, creando un índice que recibió su nombre y que años más tarde se conocería como Índice de Masa Corporal. Sin embargo, los estudios de Quételet fueron olvidados durante casi un siglo, y solo después de la Segunda Guerra Mundial los científicos comenzaron a estudiar la relación entre el peso corporal y otras enfermedades.
+
+        En 1960, cuando en algunos países la obesidad se convirtió prácticamente en una epidemia, la fórmula de Quételet fue redescubierta y validada por científicos. A partir de entonces, el cálculo fue adoptado por la Organización Mundial de la Salud y luego se denominó IMC.
+
+        Esta fórmula es bastante simple: divide tu peso (kg) por tu estatura (m) al cuadrado (el número multiplicado por sí mismo). </p>
+        <h2>IMC = Peso ÷ m²</h2>
+        <p class="imc">
+        Para hacer la tarea más fácil, a continuación, te ofrecemos una calculadora automática. Solo tienes que ingresar los datos y el resultado saldrá de inmediato. Con este índice, consultas la tabla que indica los niveles de obesidad
+       </P>
+       <div class="imc">
+        <div  class="imc-calc-container">
+            <div class="imcM">
+                <span>Tu peso (KG):</span>
+                <input id="imc-peso" type="number" min="0" max="300" step="0.1">
+                <span>Tu Estatura (M):</span>
+                <input id="imc-estatura" type="number" min="0" max="2.5" step="0.01">
+            </div>
+            <button id="imc-button">Calcular</button>
+            <span id="imc-resultado"></span>
+        </div>
+       </div>
+        <div>
+            <img class="imgImc" src="../../Media/Classificacion-IMC-Tabla.jpeg" alt="">
+        </div>
+
+       <h3>¿Como Prevenir la obesidad?</h3>
+       <P class="imc">
+        entender que debes mantener un equilibrio entre ingesta vs. consumo de calorías.
+
+        ¿Qué debo hacer? Lo más importante es tener una rutina diaria que incluya alimentos más saludables, menos fritos y alimentos menos industrializados y procesados, además debemos establecer rutinas para varios tipos de actividad física.
+        Un punto muy positivo en la lucha por la prevención o en el control del peso es que la actividad física produce una hormona llamada endorfina.  Las endorfinas siempre están asociadas con sentimientos de placer, felicidad y satisfacción, con eso muchas personas se vuelven adictas a esta hormona. Nada mal, pues una vez iniciada en el mundo de las endorfinas, la persona siempre va a querer un poco más de actividad al día siguiente.
+        Por lo tanto, no esperes resultados de la noche a la mañana. Prevenir la obesidad y mantenerse saludable es una forma de avanzar poco a poco, paso a paso, y así lograr estos objetivos para toda tu vida.
+       </P>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./IMC.js"></script>
+</body>
+</html>
