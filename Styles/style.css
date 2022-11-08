@@ -306,7 +306,7 @@ textarea {
 .product-row {
   display: flex;
   align-items: center;
-  color: white
+  color: white;
 }
 
 .product-data {
@@ -314,28 +314,21 @@ textarea {
   flex-direction: column;
 }
 
-.product-info  {
+.product-info {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-.product-info span:first-child {
-  max-width: 220px;
-  margin-right: 10px;
 }
 
 .product-actions {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 10px;
 }
-
-.product-actions > button {
+.product-actions button {
   margin-left: 20px;
   background-color: red;
-  color: white ;
+  color: white;
   padding: 10px;
   border: none;
   font-weight: 700;
@@ -406,3 +399,27 @@ textarea {
     margin: 0.5em 0 0.5em 0;
   }
 }
+#receipe-container {
+  padding: 50px;
+}
+
+.receipe-card {
+  background: white;
+  padding: 20px;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img name" "img receipes";
+  gap: 20px;
+}
+.receipe-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  grid-area: img;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

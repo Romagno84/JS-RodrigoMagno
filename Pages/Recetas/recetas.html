@@ -7,38 +7,39 @@
     <title>Sabrones Viandas y Nutricion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../../Styles/style.css">
 </head>
 <body class="fondoInicio">
-    <header class="header">
+    <header>
         <nav class="navbar">
           <div class="container-fluid"> 
-            <a class="navbar-brand" href="index.html"><img class="animate__animated animate__rotateIn" src="Media/saboresviandas.png" width="250px"></a><h1  class="animate__animated animate__fadeInDown">De Sabores Viandas y Nutricion</h1>
+            <a class="navbar-brand" href="../../index.html"><img class="animate__animated animate__rotateIn" src="../../Media/saboresviandas.png" width="200px"></a><h1  class="animate__animated animate__fadeInDown">De Sabores Viandas y Nutricion</h1>
             <button class="navbar-toggler navbar navbar-success bg-success btn btn-success btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <img src="Media/saboresviandas.png" width="100px" alt="logo">
+              <img src="../../Media/saboresviandas.png" width="100px" alt="logo">
               <h4 class="offcanvas-title" id="offcanvasNavbarLabel"> De Sabores Viandas y Nutricion</h4>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Pages/IMC/IMC.html ">Calculo de IMC</a>
+                    <a class="nav-link" href="../../Pages/IMC/IMC.html">Calculo de IMC </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./Pages/Viandas/viandas.html">Viandas</a>
+                    <a class="nav-link active" aria-current="page" href="../Viandas/viandas.html">Viandas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./Pages/Recetas/recetas.html">Recetas</a>
+                    <a class="nav-link active" aria-current="page" href="../Recetas/recetas.html">Recetas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Pages/Contacto/Contacto.html">Contacto</a>
+                    <a class="nav-link" href="../../Pages/Contacto/Contacto.html">Contacto</a>
                   </li>
                  </li>
                 </ul>
@@ -46,20 +47,17 @@
             </div>
           </div>
         </nav> 
-      </header>
+    </header>
     <section>
-      <p class="somos">
-        Somos una empresa familiar y jóven con 7 años de trayectoria en el mundo gastronómico. En este camino hemos perfeccionado nuestro producto para satisfacer al cliente con la mejor calidad y sabores gourmet para su paladar.
-
-        Es un placer para nosotros poder asesorar y brindar un servicio de estupenda calidad. Cada día nos encargamos de cubrir todas las necesidades de nuestros clientes.
-
-        El objetivo es transmitir el sabor de lo casero en todas nuestras comidas acompañando a nuestros clientes en su almentación diaria y logrando beneficios en su salud y bienestar general.
-
-        Nuestro lema es cocinar rico, casero y saludable.
-
-        ¡Bienvenidos a nuestra familia!
-      </p>
+        <h3>Recetas de nuestros chefs!</h3>
+        <div id='receipe-container'></div>
+        <div id='receipe-loading'>
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./recetas.js"></script>
 </body>
 </html>

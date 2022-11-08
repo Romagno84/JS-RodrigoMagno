@@ -103,7 +103,8 @@ function popularCarrito(){
 
 function actualizarTotal() {
     let total = carrito.reduce((acc, producto)=>{ 
-        return acc + producto.precio 
+        console.log(producto)
+        return acc + (producto.precio * producto.cantidad)
     },0)
  
     totalCarrito.innerHTML = `$${total}`
@@ -118,3 +119,38 @@ function ActualizarCantidadCarrito () {
 
     totalProducto.textContent = total;
 }
+
+
+const searchInput = document.querySelector('#search-product');
+const searchButton = document.querySelector('#search-button');
+const productList = document.querySelectorAll('.card');
+
+const filterProducts = (searchText) => {
+    console.log('aca', searchText)
+    if(!searchText || searchText.trim().length === 0) {
+        productList.forEach((element) => {
+            element.classList.remove('d-none');
+        })
+        return;
+    }
+    
+    productList.forEach((element) => {
+        const productName = element.querySelector('h3').innerText;
+        if(!productName.toLowerCase().includes(searchText.toLowerCase())) {
+            element.classList.add('d-none');
+        } else {
+            element.classList.remove('d-none');
+        }
+    })
+}
+
+searchInput.addEventListener('keypress', (e) => {
+    if(e.keyCode === 13){
+        filterProducts(searchInput.value);
+    }
+})
+
+searchButton.addEventListener('click', (e) => {
+    filterProducts(searchInput.value);
+})
+
